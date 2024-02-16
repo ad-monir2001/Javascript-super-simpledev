@@ -16,3 +16,14 @@ console.log(Name.indexOf("an"));
 // To slice a word or sentence we use .
 
 console.log(Name.split(" "));
+
+var cost = 25.49;
+
+// To round a number we use.
+
+console.log(Math.round(cost));
+
+
+// To ceil a number we use.
+
+console.log(Math.ceil(cost));
