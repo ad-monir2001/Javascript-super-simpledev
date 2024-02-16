@@ -17,13 +17,17 @@ console.log(Name.indexOf("an"));
 
 console.log(Name.split(" "));
 
-var cost = 25.49;
+var cost = 25.99999;
 
-// To round a number we use.
+// To round a number we use. It will catch the value down and upper. If it is >5 it will go down, and if it is <= 5 go up.
 
 console.log(Math.round(cost));
 
 
-// To ceil a number we use.
+// To ceil a number we use. It will catch the upper value.
 
 console.log(Math.ceil(cost));
+
+// To reduce some value after point.
+
+console.log(Math.floor(cost));
