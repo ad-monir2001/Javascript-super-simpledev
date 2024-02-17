@@ -27,3 +27,22 @@ console.log(studentNumber);
 // to know the length of an array .
 
 console.log(studentNumber.length);
+
+// to add a number on the first position in an array.
+
+var bag = [22, 15, 45, 41, 98];
+
+bag.unshift(12);
+
+console.log(bag);
+
+
+// to remove a number from the first position.
+
+var thole = [12, 54, 62, 2];
+
+console.log(thole);
+
+thole.shift();
+
+console.log(thole);
