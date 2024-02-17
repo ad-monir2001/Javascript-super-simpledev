@@ -39,10 +39,15 @@ console.log(bag);
 
 // to remove a number from the first position.
 
-var thole = [12, 54, 62, 2];
+var thole = [12, 54, 62, 2, 25, 4];
 
 console.log(thole);
 
 thole.shift();
 
 console.log(thole);
+
+// for slicing an array.
+
+console.log(thole.slice(1,4)); // ? expected output [ 62, 2, 25 ] , here 1 is starting point and 4 is ending point.
+
