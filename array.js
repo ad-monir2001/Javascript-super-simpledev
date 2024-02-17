@@ -23,3 +23,7 @@ console.log(studentNumber);
 studentNumber.pop();
 
 console.log(studentNumber);
+
+// to know the length of an array .
+
+console.log(studentNumber.length);
