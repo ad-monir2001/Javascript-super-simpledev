@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cart Quantity</title>
+    <style>
+      .red {
+        color: white;
+        background-color: red;
+      }
+
+      .green {
+        background-color: rgb(121, 212, 121);
+      }
+
+      .magenta {
+        background-color: magenta;
+        color: aquamarine;
+      }
+      button {
+        font-size: large;
+        border: none;
+        display: inline-block;
+        padding: 0.5rem;
+        border-radius: 0.8rem;
+      }
+    </style>
+  </head>
+  <body>
+    <button
+      class="magenta"
+      onclick="
+        console.log(`Cart quantity: ${cartQuantity}`);
+        "
+    >
+      Show Quantity
+    </button>
+    <button
+      onclick="
+        console.log(`Cart quantity: ${cartQuantity += 1}`);
+    "
+    >
+      Add to Cart
+    </button>
+    <button
+      class="green"
+      onclick="
+    console.log(`Cart quantity: ${cartQuantity += 2}`);
+"
+    >
+      +2
+    </button>
+    <button
+      class="green"
+      onclick="
+    console.log(`Cart quantity: ${cartQuantity += 3}`);
+"
+    >
+      +3
+    </button>
+    <button
+      class="red"
+      onclick="
+      console.log('Cart was reset');
+    console.log(`Cart quantity: ${cartQuantity = 0}`);
+"
+    >
+      Reset Cart
+    </button>
+
+    <script>
+      let cartQuantity = 0;
+    </script>
+  </body>
+</html>
