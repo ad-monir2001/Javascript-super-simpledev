@@ -1,9 +1,8 @@
 let computerMove = '';
 let result = '';
 
-function rock() {
+function computerMv() {
   const randomNumber = Math.random();
-
   if (randomNumber >= 0 && randomNumber < 1 / 3) {
     computerMove = 'rock';
   } else if (randomNumber >= 1 / 3 && randomNumber < 2 / 3) {
@@ -11,7 +10,10 @@ function rock() {
   } else if (randomNumber >= 2 / 3 && randomNumber < 1) {
     computerMove = 'scissor';
   }
+}
 
+function rock() {
+  computerMv();
   if (computerMove === 'rock') {
     result = 'Tie.';
   } else if (computerMove === 'paper') {
@@ -25,15 +27,7 @@ so ${result}`);
 }
 
 function paper() {
-  const randomNumber = Math.random();
-
-  if (randomNumber >= 0 && randomNumber < 1 / 3) {
-    computerMove = 'rock';
-  } else if (randomNumber >= 1 / 3 && randomNumber < 2 / 3) {
-    computerMove = 'paper';
-  } else if (randomNumber >= 2 / 3 && randomNumber < 1) {
-    computerMove = 'scissor';
-  }
+  computerMv();
 
   if (computerMove === 'rock') {
     result = 'You win.';
@@ -48,15 +42,7 @@ so ${result}`);
 }
 
 function scissor() {
-  const randomNumber = Math.random();
-
-  if (randomNumber >= 0 && randomNumber < 1 / 3) {
-    computerMove = 'rock';
-  } else if (randomNumber >= 1 / 3 && randomNumber < 2 / 3) {
-    computerMove = 'paper';
-  } else if (randomNumber >= 2 / 3 && randomNumber < 1) {
-    computerMove = 'scissor';
-  }
+  computerMv();
 
   if (computerMove === 'rock') {
     result = 'You lose';
