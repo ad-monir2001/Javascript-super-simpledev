@@ -1,10 +1,6 @@
 let computerMove = '';
 let result = '';
-const score = {
-  win: 0,
-  lose: 0,
-  tie: 0
-};
+const score = JSON.parse(localStorage.getItem('score'));
 
 function computerMov() {
   const randomNumber = Math.random();
@@ -47,11 +43,13 @@ function playGame(playerMove) {
 
   if (result === 'You win.') {
     score.win += 1;
-  }else if (result === 'You lose') {
+  } else if (result === 'You lose') {
     score.lose += 1;
-  }else if (result === 'Tie.') {
+  } else if (result === 'Tie.') {
     score.tie += 1;
   }
+
+  localStorage.setItem('score', JSON.stringify(score));
 
   alert(`You have chose ${playerMove}. 
 and computer has chose ${computerMove}
@@ -60,7 +58,5 @@ wins: ${score.win}, Losses: ${score.lose}, Ties: ${score.tie}`);
 }
 
 function reset() {
-  score.win = 0,
-  score.lose = 0,
-  score.tie = 0
-};
+  (score.win = 0), (score.lose = 0), (score.tie = 0);
+}
