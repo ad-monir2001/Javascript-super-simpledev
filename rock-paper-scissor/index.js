@@ -58,3 +58,9 @@ and computer has chose ${computerMove}
 so ${result}.
 wins: ${score.win}, Losses: ${score.lose}, Ties: ${score.tie}`);
 }
+
+function reset() {
+  score.win = 0,
+  score.lose = 0,
+  score.tie = 0
+};
