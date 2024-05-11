@@ -1,6 +1,10 @@
 let computerMove = '';
 let result = '';
 const score = JSON.parse(localStorage.getItem('score'));
+let resultEl = document.getElementById('result-el');
+let turnEl = document.getElementById('turn-el');
+let overViewEl = document.getElementById('overView-el');
+
 
 function computerMov() {
   const randomNumber = Math.random();
@@ -51,10 +55,15 @@ function playGame(playerMove) {
 
   localStorage.setItem('score', JSON.stringify(score));
 
-  alert(`You have chose ${playerMove}. 
-and computer has chose ${computerMove}
-so ${result}.
-wins: ${score.win}, Losses: ${score.lose}, Ties: ${score.tie}`);
+//   alert(`You have chose ${playerMove}. 
+// and computer has chose ${computerMove}
+// so ${result}.
+// wins: ${score.win}, Losses: ${score.lose}, Ties: ${score.tie}`);
+
+  resultEl.innerText = result;
+  turnEl.innerText = `You ${playerMove} - ${computerMove} Computer`;
+  overViewEl.innerText = `Wins: ${score.win}, Losses: ${score.lose}, Ties: ${score.tie}`;
+
 }
 
 function reset() {
