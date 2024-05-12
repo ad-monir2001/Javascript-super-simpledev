@@ -8,6 +8,20 @@
   <body>
     <h3>YouTube Subscribe Button</h3>
     <button id="btn-el" onclick="subscribe()">Subscribe</button>
+    <p>Amazon Shipping Calculator</p>
+    <p>Order under $40 = +$10 shipping.</p>
+    <p>Order over $40 = FREE shipping</p>
+    <input
+      type="text"
+      placeholder="Enter the cost"
+      id="input-el"
+      onkeydown="
+      handleCostKeydown(event)
+      
+    "
+    />
+    <button type="submit" onclick="calculate()">Calculate</button>
+    <p id="total-cost"></p>
     <script src="./index.js"></script>
   </body>
 </html>
