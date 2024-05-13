@@ -1,0 +1,8 @@
+#btn-el {
+  color: white;
+  background-color: black;
+  border: none;
+  padding: 0.8rem 1rem;
+  border-radius: 1.5rem;
+  font-weight: bold;
+}
