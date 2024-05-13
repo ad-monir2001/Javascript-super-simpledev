@@ -1,8 +1,18 @@
-#btn-el {
-  color: white;
-  background-color: black;
-  border: none;
-  padding: 0.8rem 1rem;
-  border-radius: 1.5rem;
-  font-weight: bold;
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.btn-el {
+    color: white;
+    background-color: black;
+    border: none;
+    padding: 0.8rem 1rem;
+    border-radius: 1.5rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.is-subscribed {
+  background-color: gray;
+  color: black;
 }

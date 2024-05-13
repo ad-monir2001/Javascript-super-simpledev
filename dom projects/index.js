@@ -1,12 +1,14 @@
-let btnEl = document.getElementById('btn-el');
+let btnEl = document.querySelector('.btn-el');
 let inputEl = document.getElementById('input-el');
 let costEl = document.getElementById('total-cost');
 
 function subscribe() {
   if (btnEl.innerText === 'Subscribe') {
     btnEl.innerText = 'Subscribed';
+    btnEl.classList.add('is-subscribed');
   } else {
     btnEl.innerText = 'Subscribe';
+    btnEl.classList.remove('is-subscribed');
   }
 }
 
