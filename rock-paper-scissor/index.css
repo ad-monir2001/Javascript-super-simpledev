@@ -8,3 +8,7 @@ button {
   background-color: rgb(73, 71, 71);
   box-shadow: 13px 12px 20px rgb(223, 216, 216);
 }
+
+.imoji {
+  width: 50px;
+}

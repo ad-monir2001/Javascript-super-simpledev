@@ -55,13 +55,10 @@ function playGame(playerMove) {
 
   localStorage.setItem('score', JSON.stringify(score));
 
-//   alert(`You have chose ${playerMove}. 
-// and computer has chose ${computerMove}
-// so ${result}.
-// wins: ${score.win}, Losses: ${score.lose}, Ties: ${score.tie}`);
+
 
   resultEl.innerText = result;
-  turnEl.innerText = `You ${playerMove} - ${computerMove} Computer`;
+  turnEl.innerHTML = `You <img src="./images/${playerMove}-emoji.png" alt="" class="imoji"> - <img src="./images/${computerMove}-emoji.png" alt="" class="imoji"> Computer`;
   overViewEl.innerText = `Wins: ${score.win}, Losses: ${score.lose}, Ties: ${score.tie}`;
 
 }
