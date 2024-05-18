@@ -1,6 +1,4 @@
 let btnEl = document.querySelector('.btn-el');
-let inputEl = document.getElementById('input-el');
-let costEl = document.getElementById('total-cost');
 
 function subscribe() {
   if (btnEl.innerText === 'Subscribe') {
@@ -12,12 +10,24 @@ function subscribe() {
   }
 }
 
+let inputEl = document.getElementById('input-el');
+let costEl = document.getElementById('total-cost');
+
 function calculate() {
   let cost = Number(inputEl.value);
-  if (cost < 40) {
+  if (cost < 40 && cost > 0) {
     cost += 10;
+    costEl.innerText = `$${cost}`;
+    costEl.classList.remove('red');
+  } else if (cost < 0) {
+    costEl.innerText = `Error: cost cannot be less than $0`;
+    costEl.classList.add('red');
+  }else{
+    costEl.innerText = `$${cost}`;
+    costEl.classList.remove('red');
+    
   }
-  costEl.innerText = `$${cost}`;
+  inputEl.value = '';
 }
 
 function handleCostKeydown(event) {
