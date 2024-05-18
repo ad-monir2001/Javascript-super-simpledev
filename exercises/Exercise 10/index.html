@@ -1,21 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="./index.css">
-
-</head>
-<body>
+    <link rel="stylesheet" href="./index.css" />
+  </head>
+  <body>
     <button class="amazon-btn">Add to Cart</button>
     <div class="uber">
-        <button class="black-btn">Request now</button>
-        <button class="white-btn">Schedule for later</button>
+      <button class="black-btn">Request now</button>
+      <button class="white-btn">Schedule for later</button>
     </div>
     <button class="js-button black-btn">Test</button>
 
-    <button class="game black-btn" onclick="toggled()">Gaming</button>
+    <div class="uber">
+      <button class="game black-btn" onclick="gameOn('.game')">
+        Gaming
+      </button>
+      <button class="music black-btn" onclick="gameOn('.music')">
+        Music
+      </button>
+      <button class="tech black-btn" onclick="gameOn('.tech')">
+        Tech
+      </button>
+    </div>
     <script src="./index.js"></script>
-</body>
+  </body>
 </html>

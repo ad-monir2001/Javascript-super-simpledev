@@ -3,13 +3,20 @@ const jsButtonEl = document.querySelector('.js-button');
 const check = jsButtonEl.classList.contains('js-button');
 console.log(check);
 
-const gamingEl = document.querySelector('.game');
-
-function toggled() {
-  let checkToggle = gamingEl.classList.contains('is-toggled');
+function gameOn(selector) {
+  const button = document.querySelector(selector);
+  let checkToggle = button.classList.contains('is-toggled');
   if (checkToggle == false) {
-    gamingEl.classList.add('is-toggled');
+    turnOffPreviousButton();
+    button.classList.add('is-toggled');
   } else {
-    gamingEl.classList.remove('is-toggled');
+    button.classList.remove('is-toggled');
+  }
+}
+
+function turnOffPreviousButton() {
+  const previousButton = document.querySelector('.is-toggled');
+  if (previousButton) {
+    previousButton.classList.remove('is-toggled');
   }
 }
