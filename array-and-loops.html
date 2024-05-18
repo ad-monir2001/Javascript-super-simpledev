@@ -8,12 +8,21 @@
   <body>
     <script>
       let numbers = [16, 50, 3];
+      console.log(numbers.length);
       let total = 0;
       for (i = 0; i < numbers.length; i++) {
         let num = numbers[i];
         total += num;
       }
       console.log(total);
+
+      const doubledNumber = [];
+
+      for (i = 0; i < numbers.length; i++) {
+        const num = numbers[i];
+        doubledNumber.push(num * 5);
+      }
+      console.log(doubledNumber);
     </script>
   </body>
 </html>
