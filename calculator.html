@@ -3,9 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="calculator.css" />
     <title>Calculator</title>
   </head>
   <body>
+    <p id="sum-el"></p>
     <p>
       <button
         onclick="
@@ -69,6 +71,7 @@
       </button>
       <button
         onclick="
+        sumEl.innerHTML += '9';
         console.log(Calculation += '9');
         "
       >
@@ -78,6 +81,7 @@
     <p>
       <button
         onclick="
+        sumEl.innerHTML += '+';
         console.log(Calculation += ' + ');
         "
       >
@@ -99,7 +103,7 @@
       </button>
       <button
         onclick="
-            console.log(Calculation = eval(Calculation));
+            sum.innerHTML = eval(Calculation);
         "
       >
         =
@@ -109,12 +113,15 @@
             console.log(Calculation = 0);
         "
       >
-        Reset
+        Clr
       </button>
     </p>
 
     <script>
       let Calculation = '';
+      let sumEl = document.getElementById('sum-el');
+      console.log(sumEl);
+      sumEl.innerHTML += Calculation;
     </script>
   </body>
 </html>
