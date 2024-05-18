@@ -22,6 +22,7 @@
   border-radius: 6px;
   font-weight: bold;
   font-size: 18px;
+  cursor: pointer;
 }
 
 .white-btn {
@@ -32,4 +33,16 @@
   border-radius: 6px;
   font-weight: bold;
   font-size: 18px;
+  cursor: pointer;
+}
+
+.is-toggled {
+  background-color: rgb(230, 230, 230);
+  color: black;
+  border: none;
+  padding: 14px 18px;
+  border-radius: 6px;
+  font-weight: bold;
+  font-size: 18px;
+  cursor: pointer;
 }
