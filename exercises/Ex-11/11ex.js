@@ -29,6 +29,13 @@ console.log(arraySwap(['good', 'bad', true, 4]));
 
 /* 11d solve */
 
-for (i = 0; i <= 10; i += 2) {
+for (i = 0; i <= 10; i += 3) {
+  console.log(i);
+}
+
+
+/**! 11e solve */
+
+for (i = 5; i >= 0; i--) {
   console.log(i);
 }
