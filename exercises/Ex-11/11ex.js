@@ -60,13 +60,28 @@ console.log(result);
 
 let increasedValue = [];
 
-function addOne(array, incrasedBy) {
+function addOne(array, increasedBy) {
   for (i = 0; i < array.length; i++) {
-    increasedValue.push(array[i] + incrasedBy);
+    increasedValue.push(array[i] + increasedBy);
   }
 
   return increasedValue;
 }
 
-console.log(addOne([1, 3, 5], 2));
+console.log(addOne([1, 3, 5], 50));
 console.log(addOne([-1, -2, 0], 5));
+
+
+/** 11j solve */
+
+let sumOfTwoArray = [];
+
+function addArrays(array1, array2) {
+  for (i = 0; i< array1.length; i++) {
+    sumOfTwoArray.push(array1[i] + array2[i]);
+
+  }
+  return sumOfTwoArray
+}
+
+console.log(addArrays([1, 1, 2, 5], [2, 4, 9, 4, 7]));
