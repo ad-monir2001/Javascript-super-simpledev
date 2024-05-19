@@ -56,16 +56,17 @@ for (i = 0; i < numbers.length; i++) {
 console.log(result);
 
 /** 11h solve */
+/** 11i solve */
 
 let increasedValue = [];
 
-function addOne(array) {
+function addOne(array, incrasedBy) {
   for (i = 0; i < array.length; i++) {
-    increasedValue.push(array[i] + 1);
+    increasedValue.push(array[i] + incrasedBy);
   }
 
   return increasedValue;
 }
 
-console.log(addOne([5, 4, 3]));
-console.log(addOne([-1, -2, 0]));
+console.log(addOne([1, 3, 5], 2));
+console.log(addOne([-1, -2, 0], 5));
