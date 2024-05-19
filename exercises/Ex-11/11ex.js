@@ -45,13 +45,27 @@ while (i < 10) {
   console.log(i);
 }
 
-
 /** 11g solve */
 console.log('solve of 11g');
 let numbers = [1, 2, 3];
 let result = [];
 for (i = 0; i < numbers.length; i++) {
-  result.push(numbers[i] + 1)
+  result.push(numbers[i] + 1);
 }
 
 console.log(result);
+
+/** 11h solve */
+
+let increasedValue = [];
+
+function addOne(array) {
+  for (i = 0; i < array.length; i++) {
+    increasedValue.push(array[i] + 1);
+  }
+
+  return increasedValue;
+}
+
+console.log(addOne([5, 4, 3]));
+console.log(addOne([-1, -2, 0]));
