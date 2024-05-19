@@ -33,9 +33,14 @@ for (i = 0; i <= 10; i += 3) {
   console.log(i);
 }
 
-
 /**! 11e solve */
 
 for (i = 5; i >= 0; i--) {
+  console.log(i);
+}
+
+/** 11f solve */
+while (i < 10) {
+  i++;
   console.log(i);
 }
