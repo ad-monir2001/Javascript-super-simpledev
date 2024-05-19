@@ -44,3 +44,14 @@ while (i < 10) {
   i++;
   console.log(i);
 }
+
+
+/** 11g solve */
+console.log('solve of 11g');
+let numbers = [1, 2, 3];
+let result = [];
+for (i = 0; i < numbers.length; i++) {
+  result.push(numbers[i] + 1)
+}
+
+console.log(result);
