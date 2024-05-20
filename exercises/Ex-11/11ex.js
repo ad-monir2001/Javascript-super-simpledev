@@ -86,4 +86,17 @@ console.log(addArrays([1, 1, 2, 5], [2, 4, 9, 4, 7]));
 
 /** 11k solve */
 
-function countPositive(nums) {}
+console.log('solve of 11k');
+
+let towArray = [];
+
+function countPositive(nums) {
+  for (i = 0; i < nums.length; i++) {
+    if (nums[i] > 0) {
+      towArray.push(nums[i]);
+    }
+  }
+  return towArray.length;
+}
+
+console.log(countPositive([1, -5, 4, -7, -14, 0, 9]));
