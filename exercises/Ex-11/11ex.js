@@ -100,3 +100,19 @@ function countPositive(nums) {
 }
 
 console.log(countPositive([1, -5, 4, -7, -14, 0, 9]));
+
+/** 11l solve */
+
+console.log('solve of 11L ');
+
+
+function minMax(nums) {
+  for (i = 0; i < nums.length; i++) {
+    if (nums[i] > 0){
+
+    }
+  }
+}
+
+
+console.log(minMax([1, -5, 4, -7, -14, 0, 9]));
