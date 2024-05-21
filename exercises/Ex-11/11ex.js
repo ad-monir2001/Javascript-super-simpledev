@@ -105,19 +105,25 @@ console.log(countPositive([1, -5, 4, -7, -14, 0, 9]));
 
 console.log('solve of 11L ');
 
-let largest = 0;
-let smallest = 0;
-
 function minMax(nums) {
-  for (i = 0; i < nums.length; i++) {
-    if (nums[i] > largest) {
-      largest = nums[i];
-    } else if (nums[i] < smallest) {
-      smallest = nums[i];
+  const result = {
+    min: nums[0],
+    max: nums[0],
+  };
+
+  for (let i = 0; i < nums.length; i++) {
+    const value = nums[i];
+    if (value < result.min) {
+      result.min = value;
+    }
+
+    if (value > result.max) {
+      result.max = value;
     }
   }
-  let minmax = { largest, smallest };
-  return minmax;
+
+  return result;
 }
 
 console.log(minMax([]));
+console.log(minMax([-2, 3, -5, 7, 10]));
