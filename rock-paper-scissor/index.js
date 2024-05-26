@@ -12,7 +12,6 @@ function autoPlay() {
   }, 1000);
 }
 
-
 function playGame(playerMove) {
   computerMov();
   if (playerMove === 'rock') {
