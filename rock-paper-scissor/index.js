@@ -1,5 +1,4 @@
 let computerMove = '';
-let result = '';
 const score = JSON.parse(localStorage.getItem('score'));
 let resultEl = document.getElementById('result-el');
 let turnEl = document.getElementById('turn-el');
@@ -7,13 +6,15 @@ let overViewEl = document.getElementById('overView-el');
 
 function autoPlay() {
   setInterval(function () {
-    const playerMove = computerMov();
+    const playerMove = pickComputerMove();
     playGame(playerMove);
   }, 1000);
 }
 
 function playGame(playerMove) {
-  computerMov();
+  const computerMove = pickComputerMove();
+
+  let result = '';
   if (playerMove === 'rock') {
     if (computerMove === 'rock') {
       result = 'Tie.';
@@ -59,7 +60,7 @@ function reset() {
   (score.win = 0), (score.lose = 0), (score.tie = 0);
 }
 
-function computerMov() {
+function pickComputerMove() {
   const randomNumber = Math.random();
   if (randomNumber >= 0 && randomNumber < 1 / 3) {
     computerMove = 'rock';
@@ -68,4 +69,6 @@ function computerMov() {
   } else if (randomNumber >= 2 / 3 && randomNumber < 1) {
     computerMove = 'scissor';
   }
+
+  return computerMove;
 }
