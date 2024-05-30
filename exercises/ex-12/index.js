@@ -14,8 +14,17 @@ function runTwice(fun) {
   fun();
 }
 
-runTwice(function() {
+runTwice(function () {
   console.log('12b');
 });
 
 runTwice(add);
+
+/** solve of 12c  */
+
+function finish() {
+  let btnEl = document.getElementById('btn-el');
+  setTimeout(function () {
+    btnEl.innerText = 'Finished!';
+  }, 1000);
+}
